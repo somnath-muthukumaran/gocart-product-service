@@ -9,5 +9,5 @@ type Product struct {
 	DiscountPercentage *float32 `bson:"discountPercentage" json:"discountPercentage"`
 	Rating             *float32 `bson:"rating" json:"rating"`
 	RatingCount        *int32   `bson:"ratingCount" json:"ratingCount"`
-	BaseModel
+	BaseModel          `bson:",inline"`
 }
